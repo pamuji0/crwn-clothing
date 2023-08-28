@@ -4,7 +4,7 @@ import './App.scss';
 import Home from './components/routes/home/home.component';
 import Navigation from './components/routes/navigation/navigation.component';
 import Shop from './components/routes/shop/shop.component';
-import SignIn from './components/routes/sign-in/sign-in.comonent';
+import Authentication from './components/routes/authentication/authentication.comonent';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Route path='/' element={<Navigation/>}>
         <Route index element={<Home/>}/>
         <Route path='shop' element={<Shop/>}/>
-        <Route path='sign-in' element={<SignIn/>}/>
+        <Route path='auth' element={<Authentication/>}/>
 
       </Route>
     </Routes>

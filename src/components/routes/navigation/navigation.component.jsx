@@ -24,9 +24,9 @@ export default function Navigation() {
           </Link>
           <Link
             className="nav-link"
-            to="/sign-in"
+            to="/auth"
           >
-            SignIn
+            SIGN IN
           </Link>
         </div>
         
