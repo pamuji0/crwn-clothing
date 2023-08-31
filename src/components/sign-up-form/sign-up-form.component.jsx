@@ -19,7 +19,6 @@ export default function SignUpForm() {
 	const [formFields, setFormFields] = useState(defaultFormFields);
 	const { displayName, email, password, confirmPassword } = formFields;
 	// console.log(formFields)
-	const { setCurrenUser } = useContext(UserContext);
 
 	const resetFormField = () => {
 		setFormFields(defaultFormFields);
@@ -37,7 +36,6 @@ export default function SignUpForm() {
 				email,
 				password
 			);
-			setCurrenUser(user);
 			await createUserDocumentFromAuth(user, { displayName });
 
 			resetFormField();
