@@ -32,6 +32,12 @@ export default function Navigation() {
 					>
 						SHOP
 					</Link>
+					<Link
+						className='nav-link'
+						to='/checkout'
+					>
+						CHECKOUT
+					</Link>
 					{currentUser ? (
 						<span
 							className='nav-link'
