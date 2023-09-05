@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import Authentication from './components/routes/authentication/authentication.comonent';
-import Checkout from './components/routes/checkout/checkout.component';
-import Home from './components/routes/home/home.component';
-import Navigation from './components/routes/navigation/navigation.component';
-import Shop from './components/routes/shop/shop.component';
+import Authentication from './routes/authentication/authentication.comonent';
+import Checkout from './routes/checkout/checkout.component';
+import Home from './routes/home/home.component';
+import Navigation from './routes/navigation/navigation.component';
+import Shop from './routes/shop/shop.component';
 
 function App() {
 	return (

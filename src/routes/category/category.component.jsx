@@ -1,7 +1,7 @@
 import React, { Fragment, useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { CategoriesContex } from '../../../contexts/categories.context';
-import ProductCard from '../../product-card/product-card.component';
+import ProductCard from '../../components/product-card/product-card.component';
+import { CategoriesContex } from '../../contexts/categories.context';
 import { CategoryContainer, CategoryTitle } from './category.style';
 export default function Category() {
 	const { category } = useParams();
