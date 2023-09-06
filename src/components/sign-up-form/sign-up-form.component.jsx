@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import {
 	createAuthUserWithEmailAndPassword,
 	createUserDocumentFromAuth,
@@ -25,7 +25,7 @@ export default function SignUpForm() {
 
 	const handleSubmit = async (event) => {
 		event.preventDefault();
-		if (password != confirmPassword) {
+		if (password !== confirmPassword) {
 			alert('password do not match');
 			return;
 		}
@@ -39,7 +39,7 @@ export default function SignUpForm() {
 
 			resetFormField();
 		} catch (error) {
-			if (error == 'auth/email-already-in-use') {
+			if (error === 'auth/email-already-in-use') {
 				alert('email already used');
 			}
 			console.log(error);
